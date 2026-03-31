@@ -7,3 +7,4 @@ __pycache__/
 
 # Editor configs
 .vscode/
+log_sensores.json
