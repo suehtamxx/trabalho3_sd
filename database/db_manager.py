@@ -1,8 +1,8 @@
-from sqlalchemy import create_engine, column, Integer, String, Float, DateTime, func
+from sqlalchemy import Column, create_engine, String, Float
 from sqlalchemy.orm import declarative_base
 
 # criando a conexao com o banco 
-engine = create_engine('sqlite://simulador.db', echo=True)
+engine = create_engine('sqlite:///simulador.db', echo=True)
 
 # base declarativa para mapear classes da tabela
 Base = declarative_base()
@@ -10,10 +10,10 @@ Base = declarative_base()
 # criando a tabela principal do bando de dados
 class Leituras(Base):
     __tablename__ = 'leituras'
-    id = column(Integer, primary_key=True)
-    sensor_id = column(Integer)
-    temperatura = column(Float)
-    status_logico = column(String)
-    timestamp = column(DateTime, default=func.now())
+    id = Column(String, primary_key=True)
+    sensor_id = Column(String)
+    temperatura = Column(Float)
+    status_logico = Column(String)
+    timestamp = Column(String)
 
 Base.metadata.create_all(engine)
