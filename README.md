@@ -52,4 +52,4 @@ O último passo é iniciar o Cliente. Execute este comando abaixo:
 ```bash
 python3 client/app.py
 ```
-Clique em "Gerar e Enviar Leitura" para enviar uma requisição para o servidor.
+Clique em "Gerar e Enviar Leitura" para enviar uma requisição para o servidor.apa

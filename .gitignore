@@ -8,3 +8,6 @@ __pycache__/
 # Editor configs
 .vscode/
 log_sensores.json
+
+# ignore database
+simulador.db
