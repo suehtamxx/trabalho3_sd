@@ -34,6 +34,7 @@ Certifique-se de ter o Python 3 instalado. Instale as dependências do projeto e
 ```bash
 pip install -r requirements.txt
 ```
+## Para rodar o sistema em duas máquinas ou mais, uma máquina vai executar o comando do banco de dados e em seguida o comando do servidor. A outra máquina precisa rodar apenas o comando do cliente (e o servidor precisa estar no ar).
 
 ## Banco de Dados
 Primeiro é preciso inicializar o Banco de Dados. Execute este comando abaixo:
@@ -53,3 +54,4 @@ O último passo é iniciar o Cliente. Execute este comando abaixo:
 python3 client/app.py
 ```
 Clique em "Gerar e Enviar Leitura" para enviar uma requisição para o servidor.apa
+

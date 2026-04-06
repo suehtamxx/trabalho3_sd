@@ -16,14 +16,11 @@ def gerar_e_enviar_leitura():
     }
 
     try:
-        # envia a requisicao post para o servidor flask
         resposta = requests.post('http://localhost:5000/api/data', json=dados_simulados)
         dados_resposta = resposta.json()
 
-        # extrai o status retornado pelo servidor
         status_recebido = dados_resposta.get('status', 'Desconhecido')
         return True, temp_sorteada, status_recebido, id_leitura
         
     except requests.exceptions.RequestException:
-        # retorna indicando falha
         return False, temp_sorteada, "Erro de Conexão", id_leitura
